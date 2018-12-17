@@ -1,15 +1,27 @@
 package com.example.demo.user;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
+@ApiModel(description = "All details about the User")
 public class User {
     private Integer id;
+
+    @Size(min = 2, message="Name should have atleast 2 letters")
     private String name;
+
+    @Past
+    @ApiModelProperty(notes = "Date should be in past")
     private Date dob;
 
-    protected User(){
+    public User() {
 
     }
+
 
     public User(Integer id, String name, Date dob) {
         super();
