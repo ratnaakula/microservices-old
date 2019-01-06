@@ -1,4 +1,8 @@
 package com.example.demo.user;
+/**
+ * Post entity to store data in H2 in memory database
+ * One to many releationship with user
+ */
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

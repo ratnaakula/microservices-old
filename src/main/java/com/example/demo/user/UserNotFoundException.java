@@ -1,4 +1,7 @@
 package com.example.demo.user;
+/**
+ * UserNotFoundException override runtimeexception
+ */
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

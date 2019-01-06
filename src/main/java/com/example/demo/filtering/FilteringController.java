@@ -1,4 +1,7 @@
 package com.example.demo.filtering;
+/**
+ * Get filter values through rest web services
+ */
 
 import com.fasterxml.jackson.databind.ser.FilterProvider;
 import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;

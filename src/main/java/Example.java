@@ -2,6 +2,9 @@ import org.apache.commons.collections4.keyvalue.MultiKey;
 
 import java.util.HashMap;
 
+/**
+ * Testing multi key (can use Pair)
+ */
 public class Example {
 
     private static HashMap codeAndLangToText;

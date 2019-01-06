@@ -1,9 +1,11 @@
 package com.example.demo.user;
+/**
+ * User entity for to store in H2 memory database
+ */
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
-import javax.annotation.Generated;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;

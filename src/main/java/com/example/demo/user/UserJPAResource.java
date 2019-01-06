@@ -1,4 +1,7 @@
 package com.example.demo.user;
+/**
+ * Spring JPA for crud operations with restful webservices for User
+ */
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

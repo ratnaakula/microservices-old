@@ -1,4 +1,7 @@
 package com.example.demo.user;
+/**
+ * mock data for user service
+ */
 
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,7 @@
 package com.example.demo.user;
+/**
+ * get user details on the fly
+ */
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
