@@ -3,12 +3,22 @@ package com.example.demo.user;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
+import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 import java.util.Date;
+import java.util.List;
 
+@Entity
 @ApiModel(description = "All details about the User")
 public class User {
+
+    @Id
+    @GeneratedValue
     private Integer id;
 
     @Size(min = 2, message="Name should have atleast 2 letters")
@@ -18,7 +28,10 @@ public class User {
     @ApiModelProperty(notes = "Date should be in past")
     private Date dob;
 
-    public User() {
+    @OneToMany(mappedBy = "user")
+    private List<Post> posts;
+
+    protected User() {
 
     }
 
@@ -52,6 +65,14 @@ public class User {
 
     public void setDob(Date dob) {
         this.dob = dob;
+    }
+
+    public List<Post> getPosts() {
+        return posts;
+    }
+
+    public void setPosts(List<Post> posts) {
+        this.posts = posts;
     }
 
     @Override
